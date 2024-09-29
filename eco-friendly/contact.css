@@ -1,0 +1,171 @@
+/* Contact Page Styles */
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.testimonials blockquote::before {
+    content: '"';
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    color: #3498db;
+}
+
+.recommendation-rate {
+    font-weight: bold;
+    color: #27ae60;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Contact Form */
+#contact-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Live Chat */
+.live-chat {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#live-chat-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#live-chat-button:hover {
+    background-color: #219a52;
+}
+
+/* Social Media */
+.social-media {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #2980b9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 1rem;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .testimonials {
+        padding: 1rem;
+    }
+
+    #contact-form {
+        gap: 0.5rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button,
+    #live-chat-button {
+        font-size: 0.9rem;
+    }
+}

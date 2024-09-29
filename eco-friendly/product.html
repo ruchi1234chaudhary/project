@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPlate - Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products" class="products-section">
+            <h1>Our Biodegradable Plates</h1>
+            
+            <div class="product-filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="small">Small</button>
+                <button class="filter-btn" data-filter="medium">Medium</button>
+                <button class="filter-btn" data-filter="large">Large</button>
+                <button class="filter-btn" data-filter="bulk">Bulk</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="small">
+                    <img src="images/small-plate.jpg" alt="Small Biodegradable Plate">
+                    <h3>Small Eco-Friendly Plate</h3>
+                    <p class="price">$5.99 / Pack of 20</p>
+                    <p class="description">Perfect for appetizers and desserts. 100% biodegradable and durable.</p>
+                    <ul class="features">
+                        <li>Eco-friendly</li>
+                        <li>Durable</li>
+                        <li>Biodegradable in 60 days</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="medium">
+                    <img src="images/medium-plate.jpg" alt="Medium Biodegradable Plate">
+                    <h3>Medium Eco-Friendly Plate</h3>
+                    <p class="price">$7.99 / Pack of 20</p>
+                    <p class="description">Ideal for main courses. Sturdy and completely compostable.</p>
+                    <ul class="features">
+                        <li>Eco-friendly</li>
+                        <li>Microwave safe</li>
+                        <li>Biodegradable in 90 days</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="large">
+                    <img src="images/large-plate.jpg" alt="Large Biodegradable Plate">
+                    <h3>Large Eco-Friendly Plate</h3>
+                    <p class="price">$9.99 / Pack of 20</p>
+                    <p class="description">Great for parties and events. Extra-large size with elegant design.</p>
+                    <ul class="features">
+                        <li>Eco-friendly</li>
+                        <li>Elegant design</li>
+                        <li>Biodegradable in 120 days</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="bulk">
+                    <img src="images/bulk-plates.jpg" alt="Bulk Biodegradable Plates">
+                    <h3>Bulk Eco-Friendly Plates</h3>
+                    <p class="price">$49.99 / Pack of 200</p>
+                    <p class="description">Perfect for restaurants and large events. Mix of sizes available.</p>
+                    <ul class="features">
+                        <li>Eco-friendly</li>
+                        <li>Bulk pricing</li>
+                        <li>Customizable mix</li>
+                    </ul>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="custom-orders" class="custom-orders-section">
+            <h2>Custom Orders</h2>
+            <p>Are you a business or event organizer looking for bulk or custom orders? We've got you covered!</p>
+            <form id="custom-order-form">
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name" required>
+
+                <label for="order-quantity">Estimated Quantity:</label>
+                <input type="number" id="order-quantity" name="order-quantity" required>
+
+                <label for="plate-size">Preferred Plate Size:</label>
+                <select id="plate-size" name="plate-size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="mixed">Mixed Sizes</option>
+                </select>
+
+                <label for="custom-requirements">Custom Requirements:</label>
+                <textarea id="custom-requirements" name="custom-requirements" rows="4"></textarea>
+
+                <button type="submit">Request Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 EcoPlate. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
